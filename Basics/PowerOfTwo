@@ -1,0 +1,40 @@
+Description
+Given a number N. Determine whether N is power of 2 or not.
+
+Input Format
+Only one line contains a number N
+
+Output Format
+Print "YES" if N is power of 2 otherwise, print "NO".
+
+Solution:
+// Write your code here
+  // You can set your Template at profile settings [https://maang.in/profile/template-code]
+  #include<bits/stdc++.h>
+
+  using namespace std;
+
+  int main()
+  {
+    float num;
+    cin>>num;
+
+    if(num==1||num==2)
+    {
+        cout<<"YES";
+        return 0;
+    }
+
+    while(num>2)
+    {
+        num=num/2;
+    }
+
+    if(num==2)
+    {
+        cout<<"YES";
+    }
+    else{
+        cout<<"NO";
+    }
+  }
